@@ -8,7 +8,7 @@ vms = {
     pip_name    = "pip-mahesh-dev-01"
     vm_name     = "frontend-vm"
     size        = "Standard_F2"
-    kv_name     = "kv-mahesh"
+    kv_name     = "kv-mahesh-kv"
     source_image_reference = {
       publisher = "Canonical"
       offer     = "0001-com-ubuntu-server-jammy"
@@ -25,7 +25,7 @@ vms = {
     pip_name    = "pip-mahesh-dev-02"
     vm_name     = "backend-vm"
     size        = "Standard_F2"
-    kv_name     = "kv-mahesh"
+    kv_name     = "kv-mahesh-kv"
     source_image_reference = {
       publisher = "Canonical"
       offer     = "0001-com-ubuntu-server-jammy"
@@ -94,7 +94,7 @@ public_ips = {
 
 key_vaults = {
   kv1 = {
-    kv_name  = "kv-mahesh"
+    kv_name  = "kv-mahesh-kv"
     location = "centralindia"
     rg_name  = "rg-mahesh"
   }
